@@ -91,8 +91,9 @@ def dealer_moves(hand_total)
   sum = hand_total
   while sum <= 16
     sum = deal_another(sum)
+    puts "--------------------------------------"
   end
-  sum
+  sum 
 end
 
 def end_game
@@ -102,7 +103,7 @@ end
 
 def win_game(card_total)
   # code #win_game here
-  puts "Congratulation, you win with #{card_total}. Thanks for playing!"
+  puts "Congratulations! You win with #{card_total}. Thanks for playing!"
 end
 
 def tie_game(card_total)
